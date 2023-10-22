@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media screen and (min-width: 700px) {
+        .box {
+          width: 90rem;
+          height: 49rem;
+          margin: auto;
+        }
+
+        .nav {
+          width: 90rem;
+          height: 16rem;
+        }
+
+        .nav div:nth-child(1) {
+          width: 90rem;
+          height: 3rem;
+          float: left;
+        }
+
+        .nav div:nth-child(1) h2 {
+          width: 12rem;
+          height: 3rem;
+          line-height: 3rem;
+          margin: 0;
+          text-align: center;
+          float: left;
+        }
+
+        .nav div:nth-child(1) p {
+          width: 26rem;
+          height: 3rem;
+          line-height: 3rem;
+          float: left;
+          margin: 0;
+          text-align: center;
+        }
+
+        .nav div:nth-child(1) p span {
+          width: 1.3rem;
+          height: 1.3rem;
+          display: inline-block;
+          line-height: 1.3rem;
+          border-radius: 0.8rem;
+          text-align: center;
+        }
+
+        .nei {
+          width: 90rem;
+          height: 13rem;
+          float: left;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          flex-direction: row;
+        }
+
+        .nav .nei div {
+          width: 20rem;
+          height: 10rem;
+          margin-top: 2rem;
+          float: left;
+          background: linear-gradient(to bottom, rgba(248, 255, 250), #fff);
+          border-radius: 0.2rem;
+        }
+        .nav .nei div img {
+          width: 3rem;
+          height: 3rem;
+          margin-top: 3.5rem;
+          float: left;
+          margin-left: 2rem;
+        }
+        .nav .nei div p {
+          width: 14rem;
+          height: 3rem;
+          float: left;
+          margin: 0;
+          margin-top: 1.5rem;
+          text-align: center;
+          line-height: 3rem;
+        }
+        .nav .nei div h3 {
+          width: 14rem;
+          height: 3rem;
+          float: left;
+          margin-top: 0;
+          text-align: center;
+          line-height: 3rem;
+        }
+        .concat {
+          width: 90rem;
+          height: 30rem;
+          float: left;
+        }
+        .ta {
+          width: 90rem;
+          height: 30rem;
+          float: left;
+        }
+        .an h2 {
+          width: 12rem;
+          height: 3rem;
+          line-height: 3rem;
+          text-indent: 1.2em;
+          margin: 0;
+          float: left;
+        }
+        #concat {
+          width: 90rem;
+          height: 30rem;
+          float: left;
+        }
+        .an {
+          width: 90rem;
+          height: 3rem;
+        }
+        .an ul {
+          width: 7rem;
+          height: 2rem;
+          float: right;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          border: 0.2px solid black;
+          margin-top: 0.5rem;
+        }
+        .an ul li {
+          width: 2.29rem;
+          height: 2rem;
+          float: left;
+          text-align: center;
+          line-height: 2rem;
+          border-right: 0.2px solid black;
+        }
+        .an ul li:last-child {
+          border: none;
+        }
+        .an input {
+          width: 15rem;
+          height: 2rem;
+          margin-top: 0.5rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+          font-size: 18px;
+          text-indent: 1em;
+          float: right;
+        }
+      }
+      @media screen and (max-width: 699px) {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        .box {
+          width: 100%;
+          height: 667px;
+        }
+        .nav {
+          width: 100%;
+          height: 290px;
+        }
+        .nav div:nth-child(1) {
+          width: 100%;
+          height: 40px;
+          float: left;
+        }
+
+        .nav div:nth-child(1) h2 {
+          width: 30%;
+          height: 40px;
+          line-height: 40px;
+          margin: 0;
+          text-align: center;
+          float: left;
+          font-size: 17px;
+        }
+
+        .nav div:nth-child(1) p {
+          width: 70%;
+          height: 40px;
+          line-height: 40px;
+          float: left;
+          margin: 0;
+          text-align: center;
+          font-size: 10px;
+        }
+
+        .nav div:nth-child(1) p span {
+          width: 15px;
+          height: 20px;
+          display: inline-block;
+          line-height: 20px;
+          border-radius: 5px;
+          text-align: center;
+        }
+
+        .nei {
+          width: 100%;
+          height: 240px;
+          float: left;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          flex-direction: row;
+        }
+
+        .nav .nei div {
+          width: 150px;
+          height: 80px;
+          margin-top: 5px;
+          float: left;
+          background: linear-gradient(to bottom, rgba(248, 255, 250), #fff);
+          border-radius: 5px;
+          background-color: red;
+        }
+        .nav .nei div img {
+          width: 40px;
+          height: 40px;
+          margin-top: 20px;
+          float: left;
+          margin-left: 5px;
+        }
+        .nav .nei div p {
+          width: 90px;
+          height: 30px;
+          float: left;
+          margin: 0;
+          margin-top: 5px;
+          text-align: center;
+          line-height: 30px;
+          font-size: 16px;
+        }
+        .nav .nei div h3 {
+          width: 90px;
+          height: 30px;
+          float: left;
+          margin-top: 10px;
+          text-align: center;
+          line-height: 30px;
+        }
+        .concat {
+          width: 100%;
+          height: 40px;
+          float: left;
+        }
+        .ta {
+          width: 100%;
+          height: 40px;
+          float: left;
+        }
+        .an h2 {
+          width: 120px;
+          height: 30px;
+          line-height: 30px;
+          text-indent: 0.2em;
+          margin: 0;
+          float: left;
+          font-size: 17px;
+          margin-top: 5px;
+        }
+        #concat {
+          width: 100%;
+          height: 300px;
+          float: left;
+        }
+        .an {
+          width: 100%;
+          height: 40px;
+        }
+        .an ul {
+          width: 92px;
+          height: 30px;
+          float: right;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          border: 0.2px solid black;
+          margin-top: 5px;
+        }
+        .an ul li {
+          width: 30px;
+          height: 30px;
+          float: left;
+          text-align: center;
+          line-height: 30px;
+          border-right: 0.2px solid black;
+        }
+        .an ul li:last-child {
+          border: none;
+        }
+        .an input {
+          width: 140px;
+          height: 30px;
+          margin-top: 5px;
+          margin-left: 5px;
+          margin-right: 5px;
+          font-size: 11px;
+          float: right;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="nav">
+        <div>
+          <h2>会员累计数据</h2>
+          <p>数据更新于 2022-07-01 07:35:12,明天更新一次 <span>?</span> 说明</p>
+        </div>
+        <div class="nei">
+          <div>
+            <img src="./img/用户-圆.png" alt="" />
+            <p>累计会员数</p>
+            <h3></h3>
+          </div>
+          <div>
+            <img src="./img/眼睛.png" alt="" />
+            <p>访问会员数</p>
+            <h3></h3>
+          </div>
+          <div>
+            <img src="./img/rmb.png" alt="" />
+            <p>付费会员数</p>
+            <h3></h3>
+          </div>
+          <div>
+            <img src="./img/hourglass.png" alt="" />
+            <p>流失率</p>
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+      <div class="concat">
+        <div class="ta">
+          <div class="an">
+            <h2>会员增长趋势</h2>
+            <input type="text" value="2022-06-01 - 2022-06-30" />
+            <ul>
+              <li>日</li>
+              <li>月</li>
+              <li>年</li>
+            </ul>
+          </div>
+          <div id="concat"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script>
+      let arr = [];
+      let date = [];
+      let arr1 = [];
+      let arr2 = [];
+      $(function () {
+        yinRu();
+        huoQu();
+      });
+      function yinRu() {
+        fetch("./index.json") // 指定本地JSON文件的路径
+          .then((response) => response.json())
+          .then((data) => {
+            $(".nei h3:eq(0)").html(data.member_count);
+            $(".nei h3:eq(1)").html(data.member_view_count);
+            $(".nei h3:eq(2)").html(data.order_pay_member_count);
+            $(".nei h3:eq(3)").html(data.un_view_scale);
+            console.log();
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+      function huoQu() {
+        arr = [];
+        arr1 = [];
+        date = [];
+        fetch("./index2.json")
+          .then((response) => response.json())
+          .then((data) => {
+            data.forEach((item, index) => {
+              date.push(Object.keys(item));
+              arr.push(Object.values(item));
+              fun5(date, arr);
+            });
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+      function fun5(date, arr) {
+        data = date[0].shift();
+        console.log(date);
+        arr[0].forEach((item, index) => {
+          arr1.push(item.member_count);
+          arr2.push(item.member_view_count);
+        });
+        var myCharts = echarts.init(document.getElementById("concat"));
+        option = {
+          grid: {
+            top: "20%",
+            left: "5%",
+            right: "5%",
+            bottom: "8%",
+            containLabel: true,
+          },
+          color: ["#7692fe", "#62dc82"],
+          tooltip: {
+            trigger: "axis",
+            backgroundColor: "rgba(1, 13, 19, 0.5)",
+            borderWidth: 1,
+            axisPointer: {
+              type: "shadow",
+            },
+
+            textStyle: {
+              color: "rgba(212, 232, 254, 1)",
+            },
+            extraCssText: "z-index:2",
+          },
+          legend: {
+            right: 20,
+            top: 30,
+            icon: "circle",
+            itemWidth: 15,
+            itemHeight: 10,
+            itemGap: 15,
+            borderRadius: 4,
+            textStyle: {
+              color: "#000",
+              fontFamily: "Alibaba PuHuiTi",
+              fontSize: 14,
+              fontWeight: 400,
+            },
+          },
+          xAxis: {
+            type: "category",
+            data: date[0],
+            axisLine: {
+              show: false,
+            },
+            axisTick: {
+              show: false,
+            },
+            axisLabel: {
+              show: true,
+              textStyle: {
+                color: "#393939", //X轴文字颜色
+              },
+            },
+          },
+          yAxis: [
+            {
+              type: "value",
+              name: ["123"],
+              axisLine: {
+                show: false,
+                lineStyle: {
+                  color: "black",
+                  fontSize: 20,
+                },
+              },
+              axisTick: {
+                show: false,
+              },
+              axisLabel: {
+                color: "#393939",
+              },
+              splitLine: {
+                show: true,
+                lineStyle: {
+                  color: "#e7e9ef",
+                  type: "dashed",
+                },
+              },
+            },
+          ],
+          series: [
+            {
+              name: "新增会员数",
+              type: "line",
+              symbol: "circle", //标记的图形为实心圆
+              symbolSize: 0, //标记的大小
+              lineStyle: {
+                color: "#7692fe",
+                width: 3,
+              },
+              data: arr1,
+            },
+            {
+              name: "新增访客数",
+              type: "line",
+              symbol: "circle", //标记的图形为实心圆
+              symbolSize: 0, //标记的大小
+              lineStyle: {
+                color: "#62dc82",
+                width: 3,
+              },
+              data: arr2,
+            },
+          ],
+        };
+        myCharts.setOption(option);
+      }
+    </script>
+  </body>
+</html>
